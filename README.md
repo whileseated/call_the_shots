@@ -1,8 +1,10 @@
-# Readme for Abstracting Every Shot
+# ReadMe for Abstracting Every Shot
 
 **This project does not contain code.** 
 
-As an experiment, this repository contains detailed ReadMe files, that when fed to corresponding llms, should (but may not) produce workable code that, when combined, reveal the features described below.
+As an experiment, this repository contains detailed ReadMe files, that when fed to corresponding llms, should (but may not) produce workable code that, when combined, reveal the features described below.  
+
+![app example](./images/20250415_012319.gif)  
 
 In short, *each ReadMe file should (when uploaded to an llm) create a single file that can then be used to create a terminal-based app for locally viewing every shot videos via command-line.* Each ReadMe here has been tested, and the output code has been verified as working.
 
