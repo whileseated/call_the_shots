@@ -16,8 +16,8 @@ First, you'll want to use these ReadMes to create python files. Upload the ReadM
 | 02_README_json_downloader.md | claude-3.7-sonnet-max | 02_json_downloader.py |  
 
 **Data Files**  
-- [x]`01_create_entire-field.py` will create `entire-field.csv`  
-- [x]`02_json_downloader.py` will create a folder of json files 
+- [x] `01_create_entire-field.py` will create `entire-field.csv`  
+- [x] `02_json_downloader.py` will create a folder of json files 
 
 After that, you'll want to generate the five scripts that interact with the data files and glue everything together. Could it be done all-in-one? Probably!
 
