@@ -2,7 +2,7 @@
 
 **This repository does not contain code.** 
 
-As an experiment in llm-prompting and text-based abstraction, this repository contains detailed ReadMe files, that when fed to corresponding llms, should (but may not) produce workable code that, when combined, reveal the features described below.  
+As an experiment in llm-prompting, text-based abstraction, and unwarranted over-engineering, this repository contains detailed ReadMe files, that when fed to corresponding llms, should (but may not) produce workable code that, when combined, reveal the features described below.  
 
 ![Pick a Player](./images/20250415_012319.gif)  
 
@@ -19,11 +19,18 @@ First, you'll want to use these ReadMes to create python files. Upload the ReadM
 `01_create_entire-field.py` will create `entire-field.csv`  
 `02_json_downloader.py` will create a folder of json files 
 
+After that, you'll want to generate the five scripts that glue everything together. Could it be done all-in-one? Probably!
+
+| ReadMe File | LLM model (tested) | Output File |
+|------------------------------|----------------------|---------------|
+| 03_README_ui_components.md | claude-3.7-sonnet-max | ui_components.py
+
 **App Files**  
-`video_manager_04.py`  
 `ui_components.py`   
-`data_manager_05.py`  
-`main_06.py`  
+`video_manager.py`  
+`data_manager.py`  
+`launch_mpv.sh`  
+`call_the_shots.py`  
 
 You will also need to create a single `config.py` file. No database is necessary.
 
