@@ -1,14 +1,14 @@
-# ReadMe for Abstracting Every Shot
+# (C)all The Shots 
 
 **This repository does not contain code.** 
 
-As an experiment, this repository contains detailed ReadMe files, that when fed to corresponding llms, should (but may not) produce workable code that, when combined, reveal the features described below.  
+As an experiment in llm-prompting and text-based abstraction, this repository contains detailed ReadMe files, that when fed to corresponding llms, should (but may not) produce workable code that, when combined, reveal the features described below.  
 
-![app example](./images/20250415_012319.gif)  
+![Pick a Player](./images/20250415_012319.gif)  
 
 In short, **each ReadMe file should (when uploaded to an llm) create a single file that can then be used to create a terminal-based app for locally viewing every shot videos via command-line.** Each ReadMe has been tested, and the output code has been verified as working.
 
-First, you'll want to use the ReadMe files to create the python files, according to this table, or any way you'd like.
+First, you'll want to use these ReadMes to create python files. Upload the ReadMe to the LLM and tell it to accurately generate the python script while specifically adhering to every detail in the ReadMe, and be sure to include the desired output filename in your prompt.
 
 | ReadMe File | LLM model (tested) | Output File |
 |------------------------------|----------------------|---------------|
