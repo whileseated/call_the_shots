@@ -6,9 +6,11 @@ As an experiment, this repository contains painstakingly detailed ReadMe files, 
 
 In short, each ReadMe file should (when uploaded to an llm) create a single file that can then be used in a project to create a terminal-based app for locally viewing every shot videos, via the command-line. Each ReadMe here has been tested, and the output code has been verified as working.
 
-Here are the files that will be created when the ReadMes are properly processed:
+*Data Files*
 `01_create_entire-field.py` will create `entire-field.csv`  
-`02_json_downloader.py` will create a folder of json files  
+`02_json_downloader.py` will create a folder of json files 
+
+*App Files*
 `video_manager_04.py`  
 `ui_components.py`   
 `data_manager_05.py`  
@@ -19,6 +21,8 @@ You will also need to create a single `config.py` file. No database is necessary
 | ReadMe File | LLM model (tested) | Output File |
 |------------------------------|----------------------|---------------|
 | 01_README_create_field_csv.md | o3-mini-high | 01_create_entire-field.py
+| 02_json_downloader.md | claude-3.7-sonnet-max | 02_json_downloader.py
+
 
 --
 
