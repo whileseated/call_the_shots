@@ -1,0 +1,1 @@
+CREATE_FIELD_URL = "https://permalink-of-leaderboard-page.com/tournaments/2025/REPLACE/THIS/ENTIRE/URL/"

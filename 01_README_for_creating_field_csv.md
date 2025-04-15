@@ -1,6 +1,6 @@
-# Entire Field Player Scraper
+# Entire Field Scraper
 
-This script scrapes player names and IDs from a specified URL and saves it to a CSV file. It uses Selenium with Chrome WebDriver to interact with a web page and extract information.
+This script reveals player names and IDs from a specified URL and saves it to a CSV file. It uses Selenium with Chrome WebDriver to interact with a web page and extract information.
 
 ## Dependencies
 
