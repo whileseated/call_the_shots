@@ -46,12 +46,12 @@ You will also need to smartly edit the `config.py` file to match your intended o
 
 Create a `requirements.txt` file with these libraries, and then run `pip install -r requirements.txt`
 
-``selenium==4.17.2
-webdriver-manager==4.0.1
-requests==2.31.0
-pandas==2.1.4
-prompt-toolkit==3.0.43
-yt-dlp==2023.12.30 ``
+``selenium==4.17.2  
+webdriver-manager==4.0.1  
+requests==2.31.0  
+pandas==2.1.4  
+prompt-toolkit==3.0.43  
+yt-dlp==2023.12.30 ``  
 
 **Finishing-Up**
 
@@ -63,6 +63,6 @@ In the end, you should have a structure of files that looks like this:
 - video_manager.py
 - data_manager.py
 - launch_mpv.sh
-- call_the_shots.py```  
+- call_the_shots.py ```  
 
 Use `python3 call_the_shots.py` to launch the cli-app. Use letters and up-down arrows to select the player, and numbers for shot selection.
