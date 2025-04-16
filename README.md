@@ -75,3 +75,7 @@ In the end, you should have a structure of files that looks like this:
 ```  
 
 Use `python3 call_the_shots.py` to launch the cli-app. Use letters and up-down arrows to select the player, and numbers for shot selection, per [the gif above](images/20250415_012319.gif).
+
+**ToDo**
+
+- [] Merge all seven ReadMes into one, and test to see which llm(s) can successfully create error-free app.
