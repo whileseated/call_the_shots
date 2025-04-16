@@ -2,8 +2,12 @@
 
 **This repository does not contain code.** 
 
-As an experiment in llm-prompting, text-based abstraction, and unwarranted over-engineering, this repository contains detailed ReadMe files, that when fed to corresponding llms, should (but may not) produce workable code that, when combined, reveal the the CLI-based features in this gif.  
+Approaching three years now of developing strategies for prompting llms to create trustable, sustainable output, I wondered if it would be possible to share a coding project that *has no code*. Meaning, is it now possible to abstract code *back* into text, and share the text in such a way that others might take that text, in the form of a series of ReadMes, and feed it to an LLM to create the same, error-free app?
 
+"(C)all the Shots" is a command-line based viewer of every shot videos, and this repository is a series of seven ReadMes, that, when passed through LLMs, reveal the the CLI-based features in the gif, below.  
+
+(If one were to extend this line of experimentation, one could imagine a code repository being contained in the transcription of a podcast, in the natural back and forth of what sounds like legible conversation.)
+ 
 ![Pick a Player](./images/20250415_012319.gif)  
 
 In short, **each ReadMe file should (when uploaded to an llm) create a single file that can then be used to create a terminal-based app for locally viewing every shot videos via command-line.** 
