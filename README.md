@@ -8,7 +8,9 @@ As an experiment in llm-prompting, text-based abstraction, and unwarranted over-
 
 In short, **each ReadMe file should (when uploaded to an llm) create a single file that can then be used to create a terminal-based app for locally viewing every shot videos via command-line.** Each ReadMe has been tested, and the output code has been verified as working.
 
-Upload a ReadMe to the corresponding LLM and prompt it to accurately generate the python script while specifically adhering to every detail in the ReadMe. Be sure to include the desired output filename in your prompt, like this: `Can you please complete a python script based on data_manager.md that includes every single feature and adheres with great detail to every single item expressed in the readme? There's no need to include inline comments in the python script either, as we have the readme for explanation. In your final output, create a copyable python codeblock.`
+To begin, we'll start with creating a csv that includes player names and their corresponding ID. The process for creating the csv-generating script is exactly the same for all seven scripts. Upload the readme to the corresponding LLM and prompt it to accurately generate the python script while specifically adhering to every detail in the ReadMe, like this: `Please create a python script based on 01_README_create_field_csv.md that includes every single feature and adheres with great detail to every single item expressed in the ReadMe. In your final output, create a copyable python codeblock.`
+
+Save those scripts according to these tables, below.
 
 | ReadMe File | LLM model (tested) | Output File |
 |------------------------------|----------------------|---------------|
@@ -35,9 +37,23 @@ After that, you'll want to generate the five scripts that interact with the data
 - [x] `video_manager.py`  
 - [x] `data_manager.py`  
 - [x] `launch_mpv.sh`  
+- [x] `config.py`
 - [x] `call_the_shots.py`  
 
-You will also need to create a single `config.py` file. No database is necessary.
+You will also need to smartly edit the `config.py` file to match your intended outcome. No database is necessary.
+
+**Requirements**
+
+Create a `requirements.txt` file with these libraries, and then run `pip install -r requirements.txt`
+
+``selenium==4.17.2
+webdriver-manager==4.0.1
+requests==2.31.0
+pandas==2.1.4
+prompt-toolkit==3.0.43
+yt-dlp==2023.12.30 ``
+
+**Finishing-Up**
 
 In the end, you should have a structure of files that looks like this:
 
@@ -47,6 +63,6 @@ In the end, you should have a structure of files that looks like this:
 - video_manager.py
 - data_manager.py
 - launch_mpv.sh
-- call_the_shots.py```
+- call_the_shots.py```  
 
 Use `python3 call_the_shots.py` to launch the cli-app. Use letters and up-down arrows to select the player, and numbers for shot selection.
