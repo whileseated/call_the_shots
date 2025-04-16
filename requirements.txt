@@ -1,0 +1,6 @@
+selenium==4.17.2  
+webdriver-manager==4.0.1  
+requests==2.31.0  
+pandas==2.1.4  
+prompt-toolkit==3.0.43  
+yt-dlp==2023.12.30 
