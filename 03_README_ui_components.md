@@ -1,10 +1,10 @@
 # UI Components Documentation
 
-This document provides a detailed explanation of the user interface components used in the golf data application. The UI components facilitate user interaction through command-line prompts with auto-completion capabilities for selecting players, rounds, holes, and shots.
+This document provides a detailed explanation of the user interface components used in the application. The UI components facilitate user interaction through command-line prompts with auto-completion capabilities for selecting players, rounds, holes, and shots.
 
 ## Overview
 
-The UI components module provides several interactive prompt functions that guide users through selecting different elements of golf data. These components use the prompt-toolkit library to provide autocompletion features and user-friendly input methods.
+The UI components module provides several interactive prompt functions that guide users through selecting different elements of data. These components use the prompt-toolkit library to provide autocompletion features and user-friendly input methods.
 
 ## Dependencies
 
@@ -36,7 +36,7 @@ The function offers autocompletion for the four possible rounds in a typical tou
 
 ### Hole Selection
 
-The select_hole function creates a prompt for selecting a golf hole (1-18) with autocompletion. It generates a list of holes from 1 to 18 and allows users to select one with the help of autocompletion.
+The select_hole function creates a prompt for selecting a hole (1-18) with autocompletion. It generates a list of holes from 1 to 18 and allows users to select one with the help of autocompletion.
 
 This makes it easy for users to specify which hole they're interested in, with autocompletion reducing typing and potential errors.
 

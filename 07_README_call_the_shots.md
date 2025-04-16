@@ -1,7 +1,7 @@
 # Call The Shots
 
 ## Overview
-Call The Shots is a Python application designed to allow users to select and view golf shot videos. The application provides an interactive console interface for users to select a player, round, hole, and specific shot, then downloads and plays the corresponding video.
+Call The Shots is a Python application designed to allow users to select and view every shot videos. The application provides an interactive console interface for users to select a player, round, hole, and specific shot, then downloads and plays the corresponding video.
 
 ## Key Dependencies
 The script relies on several custom modules:
@@ -18,20 +18,20 @@ The application is built around a single `main()` function that orchestrates the
 
 ### Player Selection System
 The application begins by calling `autocomplete_player()` from the ui_components module. This function:
-1. Presents the user with an autocomplete interface for selecting a golf player
+1. Presents the user with an autocomplete interface for selecting a player
 2. Returns two values: the player's full name (as a string) and the player's unique ID (as a string or integer)
 3. The returned player name is then formatted by replacing spaces with underscores using the `.replace(' ', '_')` method
 4. The player ID is stored for later use in retrieving the player's shot data
 
 ### Round Selection System
 After player selection, the application calls `select_round()` from the ui_components module. This function:
-1. Presents the user with a menu of available golf rounds
+1. Presents the user with a menu of available rounds
 2. Returns a single value representing the selected round number
 3. The round number is stored as the variable `round_selected` for subsequent operations
 
 ### Hole Selection System
 Following round selection, the application calls `select_hole()` from the ui_components module. This function:
-1. Presents the user with a menu of golf holes available for the previously selected round
+1. Presents the user with a menu of holes available for the previously selected round
 2. Returns a single value representing the selected hole number
 3. The hole number is stored as the variable `hole_selected` for subsequent operations
 
@@ -61,7 +61,7 @@ After a shot is selected, the application:
    - The `download_video` function internally transforms the filename completely:
      - It downloads using the original filename passed as an argument
      - Then it RENAMES the file to a DIFFERENT format: "{lastname}_round{round}_hole{hole}_shot{shot}.mp4"
-     - For example, an input filename of "Rory_McIlroy_28237_3_3_3.mp4" becomes "McIlroy_round3_hole3_shot3.mp4"
+     - For example, an input filename of "Francis_Ouimet_28237_3_3_3.mp4" becomes "McIlroy_round3_hole3_shot3.mp4"
      - The function RETURNS this NEW filename as its return value
    
 4. The return value from `download_video` MUST be captured in a variable:
@@ -81,15 +81,15 @@ After a shot is selected, the application:
    - ALWAYS use the filename returned by `download_video`
    - Example of CORRECT usage:
      ```
-     filename = "Rory_McIlroy_28237_3_3_3.mp4"  # Original filename
+     filename = "Francis_Ouimet_28237_3_3_3.mp4"  # Original filename
      downloaded_file = download_video(url, filename)  # Returns "McIlroy_round3_hole3_shot3.mp4"
      play_video(downloaded_file)  # CORRECT: Uses "McIlroy_round3_hole3_shot3.mp4"
      ```
    - Example of INCORRECT usage:
      ```
-     filename = "Rory_McIlroy_28237_3_3_3.mp4"  # Original filename
+     filename = "Francis_Ouimet_28237_3_3_3.mp4"  # Original filename
      download_video(url, filename)  # Return value ignored!
-     play_video(filename)  # WRONG: Uses original "Rory_McIlroy_28237_3_3_3.mp4"
+     play_video(filename)  # WRONG: Uses original "Francis_Ouimet_28237_3_3_3.mp4"
      ```
 
 ### Error Handling

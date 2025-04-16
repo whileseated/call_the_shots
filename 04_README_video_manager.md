@@ -51,7 +51,7 @@ Process:
 
 ## Usage Examples
 
-To download a golf shot video:
+To download a video:
 ```python
 url = "https://example.com/video123"
 filename = "John_Doe_12345_1_5_2.mp4"
