@@ -23,7 +23,7 @@ Save those scripts according to these tables, below.
 
 **Data Files**  
 - [x] `python3 01_create_entire-field.py` will create `entire-field.csv`  
-- [x] `python3 02_json_downloader.py` will create a folder of json files 
+- [x] `python3 02_json_downloader.py` will create json files for a `2025_json_data` folder
 
 After that, you'll want to generate the five scripts that interact with the data files. Could this be done as an all-in-one script? Probably!
 
