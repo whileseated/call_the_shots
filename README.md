@@ -69,6 +69,7 @@ In the end, you should have a structure of files that looks like this:
 
 ```
 - requirements.txt
+- config.py
 - 01_create_entire-field.py 
 - 02_json_downloader.py
 - ui_components.py
