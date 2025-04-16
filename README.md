@@ -78,4 +78,4 @@ Use `python3 call_the_shots.py` to launch the cli-app. Use letters and up-down a
 
 **ToDo**
 
-- [] Merge all seven ReadMes into one, and test to see which llm(s) can successfully create error-free app.
+- [ ] Merge all seven ReadMes into one, and test to see which llm(s) can successfully create error-free app.
