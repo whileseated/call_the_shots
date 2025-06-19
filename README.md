@@ -83,4 +83,8 @@ Use `python3 call_the_shots.py` to launch the cli-app. Use letters and up-down a
 
 **ToDo**
 
-- [ ] Merge all seven ReadMes into one, and test to see which llm(s) can successfully create an error-free cli-app.
+- [ ] Merge all seven ReadMes into one, and test to see which llm(s) can successfully create an error-free cli-app. (Use [gitingest](https://gitingest.com/), perhaps?)
+
+**Addendum** 
+
+20250619 - [Karpathy's new talk](https://youtu.be/LCEmiRjPEtQ?si=Ywt-GauTUXCsUL14&t=2132) has a relevant section at 35m32s where he says, "If we can make docs legible to llms, it's going to unlock a huge amount of use." It reminded me that's exactly what this project is - a set of instructions for an llm to create something "useful", which is why I've reset this repo's visiblity to public.
